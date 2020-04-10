@@ -325,7 +325,7 @@ a:hover {
     color: #ffffff;
 }
 .accent-solid-btn:hover, .cart-btn:hover{
-    background: #e90566;
+    background: #e35959;;
     color: #ffffff;
 }
 .accent-outline-btn{
@@ -2585,6 +2585,15 @@ a.detail-link:hover span{
     margin-left: 8px;
 }
 
+/*================================================
+        Edit Blog css
+=================================================*/
+
+.img-blog{
+    height:280px;
+    object-fit: cover;
+}
+
 
 /*================================================
         OUTBRACK AREA CSS
@@ -4010,7 +4019,7 @@ a.video-play-icon-without-bip:hover{
     height: 50px;
     border: none;
     border-radius: 0 30px 30px 0;
-    background-color: #ff3372;
+    background-color: #d63232;
     display: inline-block;
     text-transform: uppercase;
     color: #ffffff;
