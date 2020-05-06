@@ -41,7 +41,13 @@
 /* -----------------------------------------
 			   01. RESET CSS
 -------------------------------------------- */
-
+/*  Variables */
+:root {
+    --azul: #5998Df;
+    --rojo:#d63232;
+    --amarillo:#f4c54c;
+  }
+/*  */
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -132,6 +138,16 @@ h1, h2, h3, h4, h5 {
     color: initial;
 }
 
+.title-azul {
+    color: var(--azul);
+}
+.title-amarillo {
+    color: var(--amarillo);
+}
+.title-rojo {
+    color: var(--rojo);
+}
+
 h1 {
     margin-top: 0;
     font-size: 3.052em;
@@ -184,6 +200,14 @@ strong, b {
 /*========================================
         03. PRE DEFINE CLASS CSS
 ==========================================*/
+.ptb-0 {
+    padding: 0px 0 50px 0;
+}
+
+.ptb-50 {
+    padding: 50px 0;
+}
+
 .ptb-100 {
     padding: 100px 0;
 }
@@ -433,7 +457,7 @@ a:hover {
     transition: all 0.3s ease-in;
 }
 .circle-btn:hover{
-    background: #ff3372;
+    background: var(--rojo);
     color: #ffffff;
 }
 .action-btns a{
@@ -4216,7 +4240,8 @@ a.video-play-icon-without-bip:hover{
 }
 .list-dot li {
     position: relative;
-    padding: .5rem 0 .5rem 1.25rem;
+    padding: 0rem 0 0rem 1.25rem;
+    /* padding: .5rem 0 .5rem 1.25rem; */
 }
 .list-dot li:before {
     position: absolute;
@@ -4226,7 +4251,7 @@ a.video-play-icon-without-bip:hover{
     font-weight: 900;
     content: "\f192";
     font-size: 11px;
-    line-height: 1.5rem;
+    line-height: .5rem;
     color: #063793;
 }
 @media (min-width: 576px){
@@ -5279,4 +5304,31 @@ button.scroll-top:focus{
     border-color: transparent;
     background: #162477;
     color: #fff;
+}
+
+
+
+
+
+/*********  Styles Added  *********/
+.video-row{
+    height: auto;
+    justify-content: center;
+}
+.video-face {
+	width: auto;
+	/* border: 1px solid red; */
+    /* height: 500px; */
+}
+.video-face iframe {
+	position: relative;
+	width: 100%;
+    /* height: auto; */
+    padding: 5px;
+}
+.compac-list li {
+    line-height: 0.5rem !important;
+}
+.compac-list li::before {
+    line-height: 0.5rem !important; 
 }
